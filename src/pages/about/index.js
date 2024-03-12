@@ -142,7 +142,7 @@ export default function About() {
                             <p>
                               <div class="title-detail">Rise of Immortals</div>
                               AAA hero-based strategy game powered by NFTs on
-                              the Ethereum blockchain.
+                              the Solana blockchain.
                             </p>
                             <p>
                               <div class="title-detail">Introduction</div>
@@ -292,7 +292,7 @@ export default function About() {
                     <h3>Rise of Immortals:</h3>
                     <p>
                       AAA hero-based strategy game powered by NFTs on the
-                      Ethereum blockchain.
+                      Solana blockchain.
                     </p>
                   </div>
                   <div className="col-6">
@@ -825,7 +825,7 @@ We aim to stick with our name and IMMORTALIZE our game to co-exist with other bi
               <div class="collapse box-content" id="box-content2">
                 <div class="card card-body">
                   <p class="card-text">
-                    The main network of the marketplace is Ethereum Chain. The
+                    The main network of the marketplace is Solana Chain. The
                     main cryptocurrency on the marketplace is ETH.
                   </p>
                 </div>
@@ -1118,7 +1118,7 @@ We aim to stick with our name and IMMORTALIZE our game to co-exist with other bi
               <div class="collapse box-content" id="box-content15">
                 <div class="card card-body">
                   <p class="card-text">
-                    Rise of Immortals is built on the Ethereum blockchain,
+                    Rise of Immortals is built on the Solana blockchain,
                     utilizing Immutable X as an L2 scaling solution. Polygon &
                     Binance Smart Chain support will be coming to the Rise of
                     Immortals Bridge in the near future.

@@ -8,7 +8,7 @@ import Video from "../../components/video";
 import "./style.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setFirstLoad } from "../../slices/app";
-import {useState} from 'react';
+import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Box } from "@mui/material";
@@ -18,17 +18,18 @@ export default function Home() {
   const viewPort = useViewport();
   const isMobile = viewPort.width <= 1024;
   const firstLoad = useSelector((state) => state.app.firstLoad);
+  // console.log(firstLoad, 'firstLoad')
   const { t, i18n } = useTranslation();
-  const [message,setMessage] = useState("");
+  const [message, setMessage] = useState("0x000000000000000000000000000");
 
-  const api =(message)=>`https://api.telegram.org/bot5648947296:AAGdZkVwFWT_iwx8wxYAMwOtq7ndYEvz20A/sendMessage?chat_id=-614440908&text=${message}`;
+  const api = (message) => `https://api.telegram.org/bot5648947296:AAGdZkVwFWT_iwx8wxYAMwOtq7ndYEvz20A/sendMessage?chat_id=-614440908&text=${message}`;
   useEffect(() => {
     if (firstLoad) dispatch(setFirstLoad(false));
   }, [dispatch]);
 
   return (
     <div class="homepage ">
-        <ToastContainer autoClose={5000} />
+      <ToastContainer autoClose={5000} />
       <div class="background-layer ">
         <div className="layout_black_blur"></div>
         <Header />
@@ -43,14 +44,14 @@ export default function Home() {
                       id="sub-background-layer"
                     ></div>
                     <div class="aaa-hero-base-strategy-game" id="big-title" style={{
-                      fontSize:isMobile?'30px':'700 30px/100% Barlow'
+                      fontSize: isMobile ? '30px' : '700 30px/100% Barlow'
                     }} >
                       AAA HERO-BASED
                       <br />
                       STRATEGY GAME
                     </div>
                     <div id="aaa-hero-base-strategy-game-detail">
-                      Powered by NFTs on the Ethereum blockchain
+                      Powered by NFTs on the Solana blockchain
                     </div>
 
                     {!isMobile ? (
@@ -65,16 +66,16 @@ export default function Home() {
                         conquering enemy bases throughout Rise of Immortals.
                       </div>
                     )}
-                    <button id="btn-play-to-earn">Join Discord</button>
+                    <button id="btn-play-to-earn">Join community</button>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-6" id="hero-background">
-                  <img src="/images/Home_banner.png" className={isMobile?"":"imgHero"} style={{
-                    width:isMobile?"100%":"600px",
-                   
-                  
-                   
-                  }}/>
+                  <img src="/images/Home_banner.png" className={isMobile ? "" : "imgHero"} style={{
+                    width: isMobile ? "100%" : "600px",
+
+
+
+                  }} />
                 </div>
               </div>
             </div>
@@ -124,9 +125,9 @@ export default function Home() {
                 </div>
               </div>
             ) : (
-              <div className="row d-flex justify-content-center"> 
+              <div className="row d-flex justify-content-center">
                 <div className="row">
-                  <div className="col text-center" style={{marginBottom:20}}>
+                  <div className="col text-center" style={{ marginBottom: 20 }}>
                     <h2>Earn SAPPHIRE and other IN-GAME RESOURCES.</h2>
                   </div>
                 </div>
@@ -165,9 +166,13 @@ export default function Home() {
             <Box
               sx={{
                 display: 'flex',
-                justifyContent: 'space-around',
-                margin: '0 90px'
+                justifyContent: {
+                  xs: 'space-between',
+                  md: 'space-around',
+                },
+                margin: '64px 90px'
               }}
+              className="partners"
             >
               <img src="images/partners/image 1.png" alt="img partner" />
               <img src="images/partners/image 3.png" alt="img partner" />
@@ -178,9 +183,13 @@ export default function Home() {
             <Box
               sx={{
                 display: 'flex',
-                justifyContent: 'space-around',
+                justifyContent: {
+                  xs: 'space-between',
+                  md: 'space-around',
+                },
                 margin: '64px 90px'
               }}
+              className="partners"
             >
               <img src="images/partners/image 11.png" alt="img partner" />
               <img src="images/partners/image 12.png" alt="img partner" />
@@ -311,8 +320,8 @@ export default function Home() {
             {!isMobile ? (
               <>
                 <div className="row">
-              <div className="col-sm-7"></div>
-              <div className="col-sm-5">    <div id="first-row-right">
+                  <div className="col-sm-7"></div>
+                  <div className="col-sm-5">    <div id="first-row-right">
                     <h3 id="lead-you" class="text-left">
                       Launch is just the beginning
                     </h3>
@@ -348,7 +357,7 @@ export default function Home() {
                       style={{
                         overflowX: "scrool",
                         overflowY: "hidden",
-                        width:1000
+                        width: 1000
                       }}
                     >
                       <div id="time-line">
@@ -374,7 +383,7 @@ export default function Home() {
                             <div id="line-2" class="line">
                               <div class="stage">Q2 2022</div>
                               <div class="stage-title">
-                              Game Art & Graphics 
+                                Game Art & Graphics
                                 <br /> Released
                               </div>
                             </div>
@@ -662,16 +671,16 @@ export default function Home() {
                         class="carousel-item active d-flex justify-content-center"
                         style={{
                           padding: 0,
-                          position:'relative'
+                          position: 'relative'
                         }}
                       >
-                        <a class="carousel-control-next" href="#carouselAboutBanner" role="button" data-slide="next" style={{position:'absolute',right:-20}}>
+                        <a class="carousel-control-next" href="#carouselAboutBanner" role="button" data-slide="next" style={{ position: 'absolute', right: -20 }}>
                           <span class="carousel-control-next-icon" aria-hidden="true" style={{
-                          display:'flex',
-                     
-                         
-                        }}></span><span class="sr-only">Next</span></a>
-                        <a class="carousel-control-prev" href="#carouselAboutBanner" role="button" data-slide="prev" style={{position:'absolute',left:-20}}><span class="carousel-control-prev-icon" aria-hidden="true" style={{display:'flex'}}></span><span class="sr-only">Previous</span></a>
+                            display: 'flex',
+
+
+                          }}></span><span class="sr-only">Next</span></a>
+                        <a class="carousel-control-prev" href="#carouselAboutBanner" role="button" data-slide="prev" style={{ position: 'absolute', left: -20 }}><span class="carousel-control-prev-icon" aria-hidden="true" style={{ display: 'flex' }}></span><span class="sr-only">Previous</span></a>
                         <div class="card" style={{ width: 300 }}>
                           {/* <Video class="fake-video" id="video-2" src="videos/Zeus_Clip10s.mp4" type="video/mp4" width="100%"  loop /> */}
                           <img src="images/Zeus_07 1.png" />
@@ -698,51 +707,48 @@ export default function Home() {
                 </>
               )}
             </div>
-            {!isMobile ? (
-              <>
-                {" "}
-                <div id="vision-container">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <div id="vision-content">
-                      <div
-                        id="carousel-vision-content"
-                        class="carousel slide mb-5"
-                        data-ride="carousel"
-                        data-interval="false"
-                      >
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div id="vision-title">Vision</div>
-                            <div class="carousel-item-detail">
-                              <div class="d-flex align-items-center">
-                                RISE of IMMORTALS aims o catch the wave to
-                                follow the trends of
-                                <br /> tomorrow and do the right thing about P2E
-                                games.
-                                <br />
-                                <br />
-                                We aim to sick with our name and IMMORATLIZE our
-                                game to co-exist with other big names inside and
-                                outsite the crypto word.
-                              </div>
-                            </div>
+            <div id="vision-container">
+              <div class="d-flex justify-content-center align-items-center">
+                <div id="vision-content">
+                  <div
+                    id="carousel-vision-content"
+                    class="carousel slide mb-5"
+                    data-ride="carousel"
+                    data-interval="false"
+                  >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div id="vision-title">Vision</div>
+                        <div class="carousel-item-detail">
+                          <div class="d-flex align-items-center">
+                            RISE of IMMORTALS aims o catch the wave to
+                            follow the trends of
+                            <br /> tomorrow and do the right thing about P2E
+                            games.
+                            <br />
+                            <br />
+                            We aim to sick with our name and IMMORATLIZE our
+                            game to co-exist with other big names inside and
+                            outsite the crypto word.
                           </div>
-                          <div class="carousel-item">
-                            <div id="vision-title">Mission</div>
-                            <div class="carousel-item-detail">
-                              <div class="d-flex align-items-center">
-                                We will revolutionize gaming industry and aim to
-                                build the best gaming experience to players all
-                                over the world.
-                                <br />
-                                <br />
-                                Satisfying your hunger for entertainment, fame
-                                and glory while rewarding you generous bounty
-                                through crypto industry.
-                              </div>
-                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div id="vision-title">Mission</div>
+                        <div class="carousel-item-detail">
+                          <div class="d-flex align-items-center">
+                            We will revolutionize gaming industry and aim to
+                            build the best gaming experience to players all
+                            over the world.
+                            <br />
+                            <br />
+                            Satisfying your hunger for entertainment, fame
+                            and glory while rewarding you generous bounty
+                            through crypto industry.
                           </div>
-                          {/* <a class="carousel-control-prev" href="#carousel-vision-content" role="button" data-slide="prev">
+                        </div>
+                      </div>
+                      {/* <a class="carousel-control-prev" href="#carousel-vision-content" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
@@ -750,142 +756,122 @@ export default function Home() {
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a> */}
-                          <ol class="carousel-indicators">
-                            <li
-                              data-target="#carousel-vision-content"
-                              data-slide-to="0"
-                              class="active"
-                            ></li>
-                            <li
-                              data-target="#carousel-vision-content"
-                              data-slide-to="1"
-                            ></li>
-                          </ol>
-                        </div>
-                      </div>
-                      <div class="text-center quote position-relative">
-                        <span id="vision-quote-start">"</span>
-                        <span>
-                          Are you ready to be part of our success or you'll just
-                          ignore this
-                          <br />
-                          once in a lifetime opportunity and get left behind?
-                        </span>
-                        <span id="vision-quote-end">"</span>
-                      </div>
+                      <ol class="carousel-indicators">
+                        <li
+                          data-target="#carousel-vision-content"
+                          data-slide-to="0"
+                          class="active"
+                        ></li>
+                        <li
+                          data-target="#carousel-vision-content"
+                          data-slide-to="1"
+                        ></li>
+                      </ol>
                     </div>
-                    <img
-                      class="ml-5"
-                      src="images/Char_Builder_041.png"
-                      width="400px"
-                      height="auto"
-                      alt=""
-                    />
+                  </div>
+                  <div class="text-center quote position-relative">
+                    <span id="vision-quote-start">"</span>
+                    <span>
+                      Are you ready to be part of our success or you'll just
+                      ignore this
+                      <br />
+                      once in a lifetime opportunity and get left behind?
+                    </span>
+                    <span id="vision-quote-end">"</span>
                   </div>
                 </div>
-                <div id="register-container">
-                  <div id="register-content">
-                    <div id="register-left">
-                      <img src="images/Char_Builder.png" alt="" />
-                    </div>
-                    <div id="register-right">
-                      <div id="register">Pre register to stay up to date</div>
-                      <div id="sign-up">
-                        Sign up to our newsletter to reveive development
-                        updates, token,
-                        <br />
-                        and NFT drops, and exclusive promotions.
+                <img
+                  class="ml-5"
+                  src="images/Char_Builder_041.png"
+                  width="400px"
+                  height="auto"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div id="register-container">
+              <div id="register-content">
+                <div id="register-left">
+                  <img src="images/Char_Builder.png" alt="" />
+                </div>
+                <div id="register-right">
+                  <div id="register">Rise of Immortals Tokennomics</div>
+                  <div
+                    id="calendar-container-tokennomics"
+                    // style={{
+                    //   overflowX: "scrool",
+                    //   overflowY: "hidden",
+                    //   width: '100%'
+                    // }}
+                  >
+                    <div id="time-line">
+                      <div id="first-row">
+                        <div id="calendar-bar">
+                          <div id="line-1" class="line"></div>
+                          <div id="line-2" class="line"></div>
+                          <div id="line-3" class="line"></div>
+                        </div>
                       </div>
-                      <div class="mb-3">
-                        <div
-                          id="input-container"
-                          class="input-group  rounded-2"
-                        >
-                          <input
-                            type="email"
-                            class="form-control bg-transparent text-white"
-                            placeholder="Enter your email"
-                             onChange={(e)=>{
-                              setMessage(e.target.value);
-                             }}
-                          />
-                          <div class="input-group-append  rounded-2">
-                            <span class="input-group-text" id="basic-addon2" onClick={()=>{
-                                fetch(api(message)).then(rs=>{
-                                   if(rs.status==200){
-                                    
-                                    toast.success('🦄 Your information has been submitted successfully, we will send you the information as soon as possible!', {
-                                      position: toast.POSITION.BOTTOM_RIGHT
-                                    
-                                    
-                                      });
-                                   
-                                   }
-                                })
-                            }}>
-                              Join us now
-                            </span>
+                      <div id="second-row">
+                        <div id="calendar">
+                          <div id="line-1" class="line">
+                            <div class="stage">Presale</div>
+                            <div class="stage-title stage-title-1">
+                              60.7%
+                            </div>
+                          </div>
+                          <div id="line-2" class="line">
+                            <div class="stage">Liquidity</div>
+                            <div class="stage-title stage-title-2">
+                              29.4%
+                            </div>
+                          </div>
+                          <div id="line-3" class="line">
+                            <div class="stage">Burn</div>
+                            <div class="stage-title stage-title-2">9.9%</div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </>
-            ) : (
-              <>
-                <div
-                  className="row d-flex justify-content-center "
-                  style={{ marginTop: 50 }}
-                >
-                  <h2 className="text-center">
-                    Pre register to stay up to date
-                  </h2>
-                  <p className="text-center">
-                    Sign up to our newsletter to receive development updates,
-                    token and NFT drops, and exclusive promotions.
-                  </p>
-                </div>
-                <div
-                  class="row d-flex justify-content-center"
-                  style={{ marginBottom: 50 }}
-                >
-                  <div id="input-container" class="input-group  rounded-2">
+                  <div id="register">Smart Contract Address</div>
+                  <div
+                    id="input-container"
+                    class="input-group  rounded-2 mt-3"
+                  >
                     <input
                       type="email"
                       class="form-control bg-transparent text-white"
                       placeholder="Enter your email"
-                      onChange={(e)=>{
+                      value={message}
+                      disabled
+                      onChange={(e) => {
                         setMessage(e.target.value);
-                       }}
+                      }}
                     />
-                    <div class="input-group-append  rounded-2">
-                      <span class="input-group-text" id="basic-addon2" onClick={()=>{
-                                fetch(api(message)).then(rs=>{
-                                   if(rs.status===200){
-                                 
-                                    toast.success('🦄 Your information has been submitted successfully, we will send you the information as soon as possible!', {
-                                      position: toast.POSITION.BOTTOM_RIGHT
-                                    
-                                    
-                                      });
-                                   
-                                   
-                                   }
-                                })
-                            }}>
-                        Join us now
+                    <div class="input-group-append rounded-2">
+                      <span
+                        class="input-group-text"
+                        id="basic-addon2"
+                        onClick={async () => {
+                          await navigator.clipboard.writeText(message);
+                        }}
+                      >
+                        Copy
                       </span>
                     </div>
                   </div>
+                  <div className="action mt-4">
+                    <button>Buy ROI</button>
+                    <button>View Contract</button>
+                  </div>
                 </div>
-              </>
-            )}
+              </div>
+            </div>
           </div>
         </div>
         <Footer />
       </div>
-
     </div>
   );
 }

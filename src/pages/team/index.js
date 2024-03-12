@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from 'react-i18next';
-import Header,{ useViewport } from '../../components/header';
+import Header, { useViewport } from '../../components/header';
 import Footer from '../../components/footer';
 import './style.css';
 
@@ -8,7 +8,7 @@ export default function Team() {
   const { t } = useTranslation();
   const viewPort = useViewport();
   const isMobile = viewPort.width <= 1024;
-  const [index,setIndex] =useState(0);
+  const [index, setIndex] = useState(0);
   return (
     <div id="team">
       <div id="background-layer">
@@ -22,168 +22,168 @@ export default function Team() {
           </div>
         </div>
 
-        <div class="title">OUR TEAM</div>
-      
-      {!isMobile?<><div id="carouselExampleControls" class="carousel slide"  data-interval="false" >
-        <div class="carousel-inner container d-block">
-          <div class="carousel-item active">
-            <div class="content-ourteam">
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143.png" alt="img error" />
+        {/* <div class="title">OUR TEAM</div> */}
+
+        {/* {!isMobile ? <><div id="carouselExampleControls" class="carousel slide" data-interval="false" >
+          <div class="carousel-inner container d-block">
+            <div class="carousel-item active">
+              <div class="content-ourteam">
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143.png" alt="img error" />
+                  <div id="name">Johan P.</div>
+                  <div id="job-title">CG Supervisor</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-1.png" alt="img error" />
+                  <div id="name">CuongCG</div>
+                  <div id="job-title">Art Director</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-2.png" alt="img error" />
+                  <div id="name">Zaire Donin</div>
+                  <div id="job-title">Lead 3D Character</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-3.png" alt="img error" />
+                  <div id="name">Edward S.</div>
+                  <div id="job-title">Storyboard Artist</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-4.png" alt="img error" />
+                  <div id="name">Kadin S.</div>
+                  <div id="job-title">Lead 2D Environment</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-5.png" alt="img error" />
+                  <div id="name">Henry F.</div>
+                  <div id="job-title">Lead Color</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-6.png" alt="img error" />
+                  <div id="name">Toan Tr.</div>
+                  <div id="job-title">Rigger</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-7.png" alt="img error" />
+                  <div id="name">Long Ng.</div>
+                  <div id="job-title">Lead UI/UX</div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="content-ourteam">
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-8.png" alt="img error" />
+                  <div id="name">Dung H.</div>
+                  <div id="job-title">FX</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Group 128.png" alt="img error" />
+                  <div id="name">Uyen V.</div>
+                  <div id="job-title">Concept Artist</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Group 127.png" alt="img error" />
+                  <div id="name">Nhung T.</div>
+                  <div id="job-title">Producer</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Group 129.png" alt="img error" />
+                  <div id="name">Dung Ng.</div>
+                  <div id="job-title">Layout</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-9.png" alt="img error" />
+                  <div id="name">Thuan Ng.</div>
+                  <div id="job-title">Animator</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-10.png" alt="img error" />
+                  <div id="name">Nhut Ng.</div>
+                  <div id="job-title">Enviroment Artist</div>
+                </div>
+                <div class="content-ourteam-detail">
+                  <img src="images/team/Rectangle 143-11.png" alt="img error" />
+                  <div id="name">Thang Duong</div>
+                  <div id="job-title">Character Artist</div>
+                </div>
+                <div id="andMore">AND MORE...</div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev cen-50" href="#carouselExampleControls" role="button" data-slide="prev" >
+            <span class="carousel-control-prev-icon" style={{
+              display: "block ",
+
+            }} aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next cen-50" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" style={{
+              display: "block "
+            }} aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div></> : <>
+          <div className="row mt-5">
+
+            <div class="col-6">
+              <div className="card"><img src="images/team/Rectangle 143.png" alt="img error" />
                 <div id="name">Johan P.</div>
-                <div id="job-title">CG Supervisor</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-1.png" alt="img error" />
+                <div id="job-title">CG Supervisor</div></div>
+
+            </div>
+            <div class="col-6">
+              <div className="card"><img src="images/team/Rectangle 143-1.png" alt="img error" />
                 <div id="name">CuongCG</div>
-                <div id="job-title">Art Director</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-2.png" alt="img error" />
+                <div id="job-title">Art Director</div></div>
+
+            </div>
+            <div class="col-6">
+              <div className="card"><img src="images/team/Rectangle 143-2.png" alt="img error" />
                 <div id="name">Zaire Donin</div>
-                <div id="job-title">Lead 3D Character</div>
-              </div>
-              <div class="content-ourteam-detail">
+                <div id="job-title">Lead 3D Character</div></div>
+
+            </div>
+            <div class="col-6">
+              <div className="card">
                 <img src="images/team/Rectangle 143-3.png" alt="img error" />
                 <div id="name">Edward S.</div>
                 <div id="job-title">Storyboard Artist</div>
               </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-4.png" alt="img error" />
-                <div id="name">Kadin S.</div>
-                <div id="job-title">Lead 2D Environment</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-5.png" alt="img error" />
-                <div id="name">Henry F.</div>
-                <div id="job-title">Lead Color</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-6.png" alt="img error" />
-                <div id="name">Toan Tr.</div>
-                <div id="job-title">Rigger</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-7.png" alt="img error" />
-                <div id="name">Long Ng.</div>
-                <div id="job-title">Lead UI/UX</div>
-              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="content-ourteam">
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-8.png" alt="img error" />
-                <div id="name">Dung H.</div>
-                <div id="job-title">FX</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Group 128.png" alt="img error" />
-                <div id="name">Uyen V.</div>
-                <div id="job-title">Concept Artist</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Group 127.png" alt="img error" />
-                <div id="name">Nhung T.</div>
-                <div id="job-title">Producer</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Group 129.png" alt="img error" />
-                <div id="name">Dung Ng.</div>
-                <div id="job-title">Layout</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-9.png" alt="img error" />
-                <div id="name">Thuan Ng.</div>
-                <div id="job-title">Animator</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-10.png" alt="img error" />
-                <div id="name">Nhut Ng.</div>
-                <div id="job-title">Enviroment Artist</div>
-              </div>
-              <div class="content-ourteam-detail">
-                <img src="images/team/Rectangle 143-11.png" alt="img error" />
-                <div id="name">Thang Duong</div>
-                <div id="job-title">Character Artist</div>
-              </div>
+            <div class="col-6">
+              <div className="card"><img src="images/team/Rectangle 143-4.png" alt="img error" />
+                <div id="name">Kadin S.</div>
+                <div id="job-title">Lead 2D Environment</div></div>
+
+            </div>
+            <div class="col-6">
+              <div className="card"><img src="images/team/Rectangle 143-5.png" alt="img error" />a
+                <div id="name">Henry F.</div>
+                <div id="job-title">Lead Color</div></div>
+
+            </div>
+            <div class="col-6">
+              <div className="card"><img src="images/team/Rectangle 143-6.png" alt="img error" />
+                <div id="name">Toan Tr.</div>
+                <div id="job-title">Rigger</div></div>
+
+            </div>
+            <div class="col-6">
+              <div className="card"><img src="images/team/Rectangle 143-7.png" alt="img error" />
+                <div id="name">Long Ng.</div>
+                <div id="job-title">Lead UI/UX</div></div>
+
+            </div>
+            <div className="row d-flex justify-content-center mt-3">
               <div id="andMore">AND MORE...</div>
             </div>
           </div>
-        </div>
-        <a class="carousel-control-prev cen-50" href="#carouselExampleControls" role="button" data-slide="prev" >
-          <span class="carousel-control-prev-icon" style={{
-                  display:"block ",
-                
-                }} aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next cen-50" href="#carouselExampleControls"  role="button" data-slide="next">
-          <span class="carousel-control-next-icon" style={{
-                  display:"block "
-                }} aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div></>:<>
-      <div className="row mt-5">
-       
-      <div class="col-6">
-        <div className="card"><img src="images/team/Rectangle 143.png" alt="img error" />
-<div id="name">Johan P.</div>
-<div id="job-title">CG Supervisor</div></div>
-
-</div>
-<div class="col-6">
-  <div className="card"><img src="images/team/Rectangle 143-1.png" alt="img error" />
-<div id="name">CuongCG</div>
-<div id="job-title">Art Director</div></div>
-
-</div>
-<div class="col-6">
-  <div className="card"><img src="images/team/Rectangle 143-2.png" alt="img error" />
-<div id="name">Zaire Donin</div>
-<div id="job-title">Lead 3D Character</div></div>
-
-</div>
-<div class="col-6">
-  <div className="card">
-  <img src="images/team/Rectangle 143-3.png" alt="img error" />
-<div id="name">Edward S.</div>
-<div id="job-title">Storyboard Artist</div>
-  </div>
-</div>
-<div class="col-6">
-  <div className="card"><img src="images/team/Rectangle 143-4.png" alt="img error" />
-<div id="name">Kadin S.</div>
-<div id="job-title">Lead 2D Environment</div></div>
-
-</div>
-<div class="col-6">
-  <div className="card"><img src="images/team/Rectangle 143-5.png" alt="img error" />a
-<div id="name">Henry F.</div>
-<div id="job-title">Lead Color</div></div>
-
-</div>
-<div class="col-6">
-  <div className="card"><img src="images/team/Rectangle 143-6.png" alt="img error" />
-<div id="name">Toan Tr.</div>
-<div id="job-title">Rigger</div></div>
-
-</div>
-<div class="col-6">
-  <div className="card"><img src="images/team/Rectangle 143-7.png" alt="img error" />
-<div id="name">Long Ng.</div>
-<div id="job-title">Lead UI/UX</div></div>
-
-</div>
-<div className="row d-flex justify-content-center mt-3">
-<div id="andMore">AND MORE...</div>
-</div>
-      </div>
-      </>}
+        </>} */}
         <div class="container d-block">
           <div class="title">OUR ADVISORS</div>
-          {!isMobile?<>  <div class="content-ourAdvisors">
+          {!isMobile ? <>  <div class="content-ourAdvisors">
             <div id="carousel-advisor" class="carousel slide mb-5 d-flex justify-content-center" data-ride="carousel" data-interval="false">
               <div class="carousel-inner text-center">
                 <div class="carousel-item text-center active cms">
@@ -246,17 +246,17 @@ export default function Team() {
               </div>
             </div>
           </div> */}
-          </div></>:<>
-           <div id="advisor" className="row d-flex justify-content-center">
-                 <div className="col-12">
-                 COMING SOON
-                 </div>
-           </div>
+          </div></> : <>
+            <div id="advisor" className="row d-flex justify-content-center">
+              <div className="col-12">
+                COMING SOON
+              </div>
+            </div>
           </>}
-        {!isMobile??  <div id="concept-art-by">CONCEPT ARTISTS</div>}
+          {!isMobile ?? <div id="concept-art-by">CONCEPT ARTISTS</div>}
           <div id="content-concept-art-by">
             <div id="concept-art-by-image">
-             {!isMobile?? <img src="images/Ellipse 24.png" alt="img error" />}
+              {!isMobile ?? <img src="images/Ellipse 24.png" alt="img error" />}
               <div id="culu-art-station">CULU ARTWORK</div>
             </div>
             <div id="concept-art-by-text">
@@ -270,26 +270,26 @@ export default function Team() {
               </div>
             </div>
             <div id="concept-art-by-image" className="mt-5">
-             {!isMobile?? <div id="culu-art-station">CULU ARTWORK</div>}
-              
+              {!isMobile ?? <div id="culu-art-station">CULU ARTWORK</div>}
+
               <img src="images/Ellipse 24.png" alt="img error" />
             </div>
           </div>
-         
+
           <div id="cg3d-container" class="mb-5 pb-5" >
             <div id="carousel-cg3d" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
-              <div class="carousel-inner text-center pb-5" style={{height:1100}}>
+              <div class="carousel-inner text-center pb-5" style={{ height: 1100 }}>
                 <div class="carousel-item first active">
-                <div id="graphic-engineer-container" class="d-flex">
-                <div id="graphic-engineer-title" class="text-left d-flex align-items-center">
-                CG3D  STORY
-                </div>
-                <div id="graphic-engineer-img" className="bg1_story">
-                  <img src="images/graphic_engineer.png" id="img_100"/>
-                </div>
-                </div>
+                  <div id="graphic-engineer-container" class="d-flex">
+                    <div id="graphic-engineer-title" class="text-left d-flex align-items-center">
+                      CG3D  STORY
+                    </div>
+                    <div id="graphic-engineer-img" className="bg1_story">
+                      <img src="images/graphic_engineer.png" id="img_100" />
+                    </div>
+                  </div>
                   <div class="d-flex">
-                    
+
                     <div id="content-left" class="pr-4">
                       <p class="cg3d-text">
                         We believe that fun and beautiful games will become a source of income
@@ -351,98 +351,98 @@ export default function Team() {
                   </div>
                 </div>
                 <div class="carousel-item position-relative">
-                <div id="graphic-engineer-container" class="d-flex">
-                <div id="graphic-engineer-title" class="text-left d-flex align-items-center">
-                A GRAPHICS ENGINEER'S STORY
-                </div>
-                <div id="graphic-engineer-img" className="bg1_story">
-                  <img src="images/bg2_story.png" id="img_100"/>
-                </div>
-                </div>
+                  <div id="graphic-engineer-container" class="d-flex">
+                    <div id="graphic-engineer-title" class="text-left d-flex align-items-center">
+                      A GRAPHICS ENGINEER'S STORY
+                    </div>
+                    <div id="graphic-engineer-img" className="bg1_story">
+                      <img src="images/bg2_story.png" id="img_100" />
+                    </div>
+                  </div>
                   <div class="d-flex" >
-                    
+
                     <div id="content-left" class="pr-4">
                       <p class="cg3d-text">
-                      What does typical day-to-day at Rise of Immortals look like for an engineer, or for any other position? You've undoubtedly thought about that if you've ever considered a job with us. And for good reason—you can only squeeze so much information into a Notice of "available positions" that is short in length.
+                        What does typical day-to-day at Rise of Immortals look like for an engineer, or for any other position? You've undoubtedly thought about that if you've ever considered a job with us. And for good reason—you can only squeeze so much information into a Notice of "available positions" that is short in length.
                         <br />
-                        Of course, some facets of a job are common to everybody. Depending on your area of specialization, as engineers, we design databases, identify clients, write code, and fiddle with curly brackets. That holds true for Rise of Immortals just as much as it does for other companies. 
+                        Of course, some facets of a job are common to everybody. Depending on your area of specialization, as engineers, we design databases, identify clients, write code, and fiddle with curly brackets. That holds true for Rise of Immortals just as much as it does for other companies.
                         <br />
-                    
+
                       </p>
                       <p class="cg3d-text">
-                      The unique aspect of working at Rise of Immortals is that no matter what position you've been hired for, you're already in it because...
-                      <br/>
-                      1. You are an expert in your field.
-                      <br/>
-                      2. You don't hesitate to apply your exceptional expertise, and
-                      <br/>
-                      3. Your dedication to collaboration.
+                        The unique aspect of working at Rise of Immortals is that no matter what position you've been hired for, you're already in it because...
+                        <br />
+                        1. You are an expert in your field.
+                        <br />
+                        2. You don't hesitate to apply your exceptional expertise, and
+                        <br />
+                        3. Your dedication to collaboration.
                       </p>
-                     
+
                     </div>
                     <div id="content-right" class="pl-4">
                       <p class="cg3d-text">
-                      What do we mean when we say we're seeking cooperative types? Practically speaking, what we're saying is that you value helping others, put the needs of your team before your own desires, and are never reluctant to ask questions. In addition to having a genuine regard for your teammates and coworkers, being amiable is crucial.
-                      <br/>
-                      Years spent working for the company are not taken into account by Rise of Immortals members when deciding who to listen to. You have the full support of your team and the organization from day one, and you are expected to actively contribute to everyone's success.
-                      <br/>
-                      You won't be required to adhere to any corporate hierarchies or layers, and even if you stroll all the way down the office hallway, you won't encounter any red tape. Although we prioritize speed, rigid formalities would result in a slightly more predictable structure. Giving people control over their job and the resources they need to work independently and quickly is the best way to achieve this goal.
+                        What do we mean when we say we're seeking cooperative types? Practically speaking, what we're saying is that you value helping others, put the needs of your team before your own desires, and are never reluctant to ask questions. In addition to having a genuine regard for your teammates and coworkers, being amiable is crucial.
+                        <br />
+                        Years spent working for the company are not taken into account by Rise of Immortals members when deciding who to listen to. You have the full support of your team and the organization from day one, and you are expected to actively contribute to everyone's success.
+                        <br />
+                        You won't be required to adhere to any corporate hierarchies or layers, and even if you stroll all the way down the office hallway, you won't encounter any red tape. Although we prioritize speed, rigid formalities would result in a slightly more predictable structure. Giving people control over their job and the resources they need to work independently and quickly is the best way to achieve this goal.
                       </p>
-                   
+
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item position-relative">
-                <div id="graphic-engineer-container" class="d-flex">
-                <div id="graphic-engineer-title" class="text-left d-flex align-items-center">
-                FREEDOM AND RESPONSIBILITY
-                </div>
-                <div id="graphic-engineer-img" className="bg1_story">
-                  <img src="images/bg3_story.png" id="img_100"/>
-                </div>
-                </div>
+                  <div id="graphic-engineer-container" class="d-flex">
+                    <div id="graphic-engineer-title" class="text-left d-flex align-items-center">
+                      FREEDOM AND RESPONSIBILITY
+                    </div>
+                    <div id="graphic-engineer-img" className="bg1_story">
+                      <img src="images/bg3_story.png" id="img_100" />
+                    </div>
+                  </div>
                   <div class="d-flex">
-                    
+
                     <div id="content-left" class="pr-4">
                       <p class="cg3d-text">
-                      What strikes us most about the people at CG3D Studios is that everyone can contribute to the team's efforts and is strongly encouraged to do so. While we are all experts in our fields, we also have to step out of our comfort zones and work as generalists, which enables us to broaden our understanding of new concepts. Some artists in other studios don’t focus on the smallest of details. 
-                     
+                        What strikes us most about the people at CG3D Studios is that everyone can contribute to the team's efforts and is strongly encouraged to do so. While we are all experts in our fields, we also have to step out of our comfort zones and work as generalists, which enables us to broaden our understanding of new concepts. Some artists in other studios don’t focus on the smallest of details.
+
                         <br />
                         CG3D Studios was founded by people with vast experience in the industry
                         and are comprised of people from different fields of expertise.
                       </p>
                       <p class="cg3d-text">
-                      To avoid situations like this, CG3D Studios meticulously creates even the smallest elements, like shoelaces. In our company, we have two artists on every team who create the individual parts of the game. So rest assured that no details are done haphazardly. Consequently, three programmers on every team share coding chores and collaborate with our designers to provide the finest gaming experience possible.
+                        To avoid situations like this, CG3D Studios meticulously creates even the smallest elements, like shoelaces. In our company, we have two artists on every team who create the individual parts of the game. So rest assured that no details are done haphazardly. Consequently, three programmers on every team share coding chores and collaborate with our designers to provide the finest gaming experience possible.
                       </p>
-                     
+
                     </div>
                     <div id="content-right" class="pl-4">
                       <p class="cg3d-text">
-                      Making the best game to be played in a decade is our major objective. To achieve this, we must have mutual respect for one another and be mindful of what the other team members are working on.  Although we consult with everyone’s opinions before making a decision, the team member who is most knowledgeable about the subject at hand always has the final word. For example, we can all make suggestions about the looks of some character, but the artist who created that character always makes the final call.
+                        Making the best game to be played in a decade is our major objective. To achieve this, we must have mutual respect for one another and be mindful of what the other team members are working on.  Although we consult with everyone’s opinions before making a decision, the team member who is most knowledgeable about the subject at hand always has the final word. For example, we can all make suggestions about the looks of some character, but the artist who created that character always makes the final call.
                       </p>
                       <p class="cg3d-text">
-                      On the flip side of freedom, there's always the responsibility that comes with it. In difficult times, everyone still has to pull the same rope, which is not always easy. Individuals and teams are small, so there's no room for people to just stand on the sidelines and wait for someone to tell them what to do. In order to provide clients with the optimal product experience, we must also identify common ground between the approaches of individuals and teams.
+                        On the flip side of freedom, there's always the responsibility that comes with it. In difficult times, everyone still has to pull the same rope, which is not always easy. Individuals and teams are small, so there's no room for people to just stand on the sidelines and wait for someone to tell them what to do. In order to provide clients with the optimal product experience, we must also identify common ground between the approaches of individuals and teams.
                       </p>
-                     
+
                     </div>
                   </div>
                 </div>
- 
-                <a class="carousel-control-prev" style={{display:index>0?'flex':'none'}} onClick={()=>{
-                    setIndex(prev=>prev-1);
-                    //console.log(index)
-                  }}  href="#carousel-cg3d" role="button" data-slide="prev">
+
+                <a class="carousel-control-prev" style={{ display: index > 0 ? 'flex' : 'none' }} onClick={() => {
+                  setIndex(prev => prev - 1);
+                  //console.log(index)
+                }} href="#carousel-cg3d" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" style={{
-                    display:"flex"
-                  }}  aria-hidden="true"></span>
+                    display: "flex"
+                  }} aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" style={{display:index>=2?'none':'flex'}} href="#carousel-cg3d" onClick={()=>{
-                    setIndex(prev=>prev+1);
-                   // console.log(index)
-                  }} role="button" data-slide="next">
-                  <span class="carousel-control-next-icon"  style={{
-                    display:"block "
+                <a class="carousel-control-next" style={{ display: index >= 2 ? 'none' : 'flex' }} href="#carousel-cg3d" onClick={() => {
+                  setIndex(prev => prev + 1);
+                  // console.log(index)
+                }} role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" style={{
+                    display: "block "
                   }} aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>

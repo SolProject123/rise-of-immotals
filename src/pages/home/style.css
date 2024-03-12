@@ -504,8 +504,8 @@
   background-image: url('../../../public/images/Background/pre-regiser.png');
   background-size: cover;
   width: 1043px;
-  height: 439px;
-  padding: 160px 70px 70px 70px;
+  height: 489px;
+  padding: 90px 70px 70px 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -518,8 +518,9 @@
 }
 
 .homepage #register-left {
-  width: 40%;
+  width: 38%;
   position: relative;
+  margin-top: 26px;
 }
 
 .homepage #register {
@@ -549,6 +550,9 @@
 .homepage #register-container span {
   border-radius: 10px;
   margin-left: -10px;
+  padding: 0 32px;
+  cursor: pointer;
+  background-color: rgba(195, 195, 195, 1);
 }
 
 .homepage #basic-addon2 {
@@ -558,7 +562,7 @@
 }
 
 .homepage #input-container {
-  width: 360px;
+  width: 100%;
 }
 #main_bg{
   margin: 100px 0;
@@ -648,4 +652,179 @@
 }
 .aaa-hero-base-strategy-game{
   font-size: 60px !important;
+}
+.homepage #calendar-container-tokennomics #time-line{
+  width: 100% !important;
+  height: 155px !important;
+}
+.homepage #calendar-container-tokennomics {
+  margin-top: 0px;
+}
+
+.homepage #calendar-container-tokennomics #first-row,
+.homepage #calendar-container-tokennomics #second-row {
+  display: flex;
+  justify-content: start;
+}
+
+.homepage #calendar-container-tokennomics #first-row #calendar-bar {
+  margin-top: 24px;
+  background: linear-gradient(90deg, #3D306F 48.5%, #F7D62A 75.5%, #F18200 100%);
+  /* background: linear-gradient(90deg, rgba(61, 48, 111, 1.00) 0%, rgba(247, 214, 42, 1.00) 51.87498927116394%, rgba(241, 130, 0, 1.00) 100%); */
+  border-radius: 16px;
+  width: 100%;
+  min-width: 100%;
+  height: 18.96px;
+  position: relative;
+}
+
+.homepage #calendar-container-tokennomics #first-row .line {
+  position: absolute;
+  top: -10px;
+  height: 45px;
+  border: solid rgba(255, 255, 255, 0.38);
+  border-width: 0 1px 0 0;
+}
+
+.homepage #calendar-container-tokennomics #second-row .line {
+  position: absolute;
+  top: -10px;
+  height: 60px;
+  border: solid rgba(255, 255, 255, 0.38);
+  border-width: 0 0 0 1px;
+}
+
+.homepage #calendar-container-tokennomics .line#line-1 {
+  left: 17.37px;
+}
+
+.homepage #calendar-container-tokennomics .line#line-2 {
+  left: 282.71px;
+}
+
+.homepage #calendar-container-tokennomics .line#line-3 {
+  left: 465.36px;
+}
+
+.homepage #calendar-container-tokennomics #second-row {
+  margin-top: 46px;
+}
+
+.homepage #calendar-container-tokennomics #second-row #calendar {
+  border-radius: 16px;
+  width: 100%;
+  min-width: 100%;
+  height: 18.96px;
+  position: relative;
+}
+
+#calendar-container-tokennomics .stage-title {
+  text-align: left;
+  font: 700 20px/24px 'Barlow';
+  padding: 0 6px;
+}
+
+#calendar-container-tokennomics .stage-title-1 {
+  color: rgba(213, 84, 84, 1) !important;
+}
+
+#calendar-container-tokennomics .stage-title-2 {
+  color: rgba(204, 176, 58, 1) !important;
+}
+
+#calendar-container-tokennomics .stage-title-3 {
+  color: rgba(238, 129, 62, 1) !important;
+}
+
+#calendar-container-tokennomics .stage {
+  padding-top: 8px;
+  color: #f4f4f4 !important;
+  text-align: left;
+  font: 700 13px/44px 'Barlow';
+  line-height: 12px;
+  padding: 6px 6px 3px 6px;
+}
+.homepage #register-container .action {
+  display: flex;
+  gap: 16px;
+}
+
+.homepage #register-container .action button {
+  width: 100%;
+  padding: 12px 0;
+  font-weight: 700;
+}
+
+.homepage #register-container .action button:first-child {
+  background-image: none !important;
+  background-color: rgba(49, 52, 57, 1);
+  color: #f4f4f4 !important;
+}
+
+.homepage #register-container .action button:last-child {
+  color: rgba(27, 30, 36, 1) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage #partner {
+    margin-top: 32px;
+  }
+  .homepage .partners {
+    margin: 24px 0;
+  }
+  .homepage .partners img{
+    width: 48px;
+    height: 48px;
+  }
+  .homepage #vision-container > div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .homepage #vision-container .carousel-item-detail {
+    height: 220px;
+  }
+  .homepage #vision-container > div #vision-content #carousel-vision-content {
+    margin-bottom: 0 !important;
+  }
+  .homepage #vision-container > div img {
+    margin-left: 0 !important;
+    width: 250px;
+  }
+  .homepage #register-container #register-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .homepage #register-container {
+    margin: 60px auto 150px auto;
+  }
+  .homepage #register-left {
+    margin-top: 0;
+  }
+  .homepage #register-content {
+    height: 620px;
+  }
+  .homepage #register-content img {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 330px;
+  }
+  .homepage #register-content {
+    padding: 90px 0px 70px 0px;
+    width: 330px;
+  }
+  .homepage #register {
+    font-size: 20px;
+  }
+  .homepage #register-right {
+    padding: 0 16px;
+  }
+  .homepage #calendar-container-tokennomics #first-row #calendar-bar {
+    width: 570px;
+    min-width: 570px;
+  }
+  .homepage #calendar-container-tokennomics #second-row #calendar {
+    width: 570px;
+    min-width: 570px;
+  }
 }
