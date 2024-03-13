@@ -392,15 +392,15 @@ export default function Home() {
                               <div class="stage-title">Presale & NFTs</div>
                             </div>
                             <div id="line-4" class="line">
-                              <div class="stage">Q2 2022</div>
+                              <div class="stage">Q2 2024</div>
                               <div class="stage-title">Big Marketing</div>
                             </div>
                             <div id="line-5" class="line">
-                              <div class="stage">Q3 2023</div>
+                              <div class="stage">Q3 2024</div>
                               <div class="stage-title">Public Beta Launch</div>
                             </div>
                             <div id="line-6" class="line">
-                              <div class="stage">Q4 2023</div>
+                              <div class="stage">Q4 2024</div>
                               <div class="stage-title">Game Launch</div>
                             </div>
                           </div>
@@ -463,34 +463,34 @@ export default function Home() {
                         <div id="second-row">
                           <div id="calendar">
                             <div id="line-1" class="line">
-                              <div class="stage">Q1 2022</div>
+                              <div class="stage">Q3 2023</div>
                               <div class="stage-title">
                                 Game Concept
                                 <br /> Release
                               </div>
                             </div>
                             <div id="line-2" class="line">
-                              <div class="stage">Q2 2022</div>
+                              <div class="stage">Q4 2023</div>
                               <div class="stage-title">
                                 Gamrt & Graphics
                                 <br /> Released
                               </div>
                             </div>
                             <div id="line-3" class="line">
-                              <div class="stage">Q3 2022</div>
-                              <div class="stage-title">Community Launch</div>
+                              <div class="stage">Q1 2024</div>
+                              <div class="stage-title">Presale & NFTs</div>
                             </div>
                             <div id="line-4" class="line">
-                              <div class="stage">Q4 2022</div>
-                              <div class="stage-title">Public Beta Launch</div>
+                              <div class="stage">Q2 2024</div>
+                              <div class="stage-title">Big Marketing</div>
                             </div>
                             <div id="line-5" class="line">
-                              <div class="stage">Q1 2023</div>
-                              <div class="stage-title">Game Launch</div>
+                              <div class="stage">Q3 2024</div>
+                              <div class="stage-title">Public Beta Launch</div>
                             </div>
                             <div id="line-6" class="line">
-                              <div class="stage">Q2 2023</div>
-                              <div class="stage-title">Tournament Esports</div>
+                              <div class="stage">Q4 2024</div>
+                              <div class="stage-title">Game Launch</div>
                             </div>
                           </div>
                         </div>
