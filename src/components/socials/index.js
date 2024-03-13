@@ -12,7 +12,7 @@ export default function Stores() {
       <div>
         {/* <a  href="https://www.instagram.com/riseofimmortals/"><img src="images/Social/Instagram.png" alt="instagram" /></a> */}
         <a  href="https://twitter.com/ImmortalsRise"><img src="images/Social/Twitter.png" alt="twitter" /></a>
-        <a  href="https://t.me/RiseofImmortalsAnnouncements"><img src="images/Social/Telegram.png" alt="telegram" /></a>
+        <a  href="https://t.me/riseofimmortals2024"><img src="images/Social/Telegram.png" alt="telegram" /></a>
         {/* <a  href="" data-toggle="tooltip" data-placement="top" title="COMING SOON "><img src="images/Social/Discord.png" alt="discord" /></a> */}
         {/* <a  href="https://www.youtube.com/channel/UCpZSWKEYHAfPaoG5LsFm7Cw" ><img src="images/Social/Youtube.png" alt="youtube" /></a> */}
    
