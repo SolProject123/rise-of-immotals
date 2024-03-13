@@ -681,9 +681,17 @@ export default function Home() {
 
                           }}></span><span class="sr-only">Next</span></a>
                         <a class="carousel-control-prev" href="#carouselAboutBanner" role="button" data-slide="prev" style={{ position: 'absolute', left: -20 }}><span class="carousel-control-prev-icon" aria-hidden="true" style={{ display: 'flex' }}></span><span class="sr-only">Previous</span></a>
-                        <div class="card" style={{ width: 300 }}>
+                        {/* <div class="card" style={{ width: 300 }}> */}
+                        <div style={{ width: 300 }}>
+                        <Video
+                            id="video-1"
+                            src="videos/Zeus_Clip10s.mp4"
+                            type="video/mp4"
+                            width="100%"
+                            loop
+                          />
                           {/* <Video class="fake-video" id="video-2" src="videos/Zeus_Clip10s.mp4" type="video/mp4" width="100%"  loop /> */}
-                          <img src="images/Zeus_07 1.png" />
+                          {/* <img src="images/Zeus_07 1.png" />
                           <div
                             class="card-body"
                             style={{ background: "#282828" }}
@@ -699,7 +707,7 @@ export default function Home() {
                                 <img src="images/youtobe_vector.png" />
                               </div>
                             </div>
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
