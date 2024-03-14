@@ -115,7 +115,7 @@ export default function Header() {
             custom={height}
             ref={containerRef}
             className="nav-mobile"
-            style={{ height: '100vh' }}
+            style={{ height: '100vh', zIndex: isOpen ? 100000 : 0 }}
           >
             <motion.div className="background" variants={sidebar} />
             <motion.ul
