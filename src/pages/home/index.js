@@ -6,6 +6,7 @@ import Stores from "../../components/stores";
 import Socials from "../../components/socials";
 import Video from "../../components/video";
 import "./style.css";
+import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { setFirstLoad } from "../../slices/app";
 import { useState } from 'react';
@@ -20,7 +21,8 @@ export default function Home() {
   const firstLoad = useSelector((state) => state.app.firstLoad);
   // console.log(firstLoad, 'firstLoad')
   const { t, i18n } = useTranslation();
-  const [message, setMessage] = useState("0x000000000000000000000000000");
+  const [message, setMessage] = useState("FkK2Mj7oprVMAoQtzQzhwaUFwGaBTSpJjhGKAoDcoptk");
+  const navigate = useNavigate();
 
   const api = (message) => `https://api.telegram.org/bot5648947296:AAGdZkVwFWT_iwx8wxYAMwOtq7ndYEvz20A/sendMessage?chat_id=-614440908&text=${message}`;
   useEffect(() => {
@@ -66,7 +68,7 @@ export default function Home() {
                         conquering enemy bases throughout Rise of Immortals.
                       </div>
                     )}
-                    <button id="btn-play-to-earn">Join community</button>
+                    <a href="https://twitter.com/immortalsrise1" id="btn-play-to-earn">Join community</a>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-6" id="hero-background">
@@ -472,7 +474,7 @@ export default function Home() {
                             <div id="line-2" class="line">
                               <div class="stage">Q4 2023</div>
                               <div class="stage-title">
-                                Gamrt & Graphics
+                                Game & Graphics
                                 <br /> Released
                               </div>
                             </div>
@@ -825,18 +827,18 @@ export default function Home() {
                           <div id="line-1" class="line">
                             <div class="stage">Presale</div>
                             <div class="stage-title stage-title-1">
-                              60.7%
+                              80%
                             </div>
                           </div>
                           <div id="line-2" class="line">
                             <div class="stage">Liquidity</div>
                             <div class="stage-title stage-title-2">
-                              29.4%
+                              15%
                             </div>
                           </div>
                           <div id="line-3" class="line">
                             <div class="stage">Burn</div>
-                            <div class="stage-title stage-title-2">9.9%</div>
+                            <div class="stage-title stage-title-2">5%</div>
                           </div>
                         </div>
                       </div>
@@ -871,7 +873,7 @@ export default function Home() {
                   </div>
                   <div className="action mt-4">
                     <button>Buy ROI</button>
-                    <button>View Contract</button>
+                    <button onClick={() => window.open("https://solscan.io/token/FkK2Mj7oprVMAoQtzQzhwaUFwGaBTSpJjhGKAoDcoptk", "_blank")}>View Contract</button>
                   </div>
                 </div>
               </div>

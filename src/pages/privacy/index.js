@@ -10,7 +10,7 @@ export default function Privacy() {
         <Header />
         <div class="container d-block text-left">
           <div id="title">Privacy Policy</div>
-          <div id="time" class="mb-5">Effective Date: August 8, 2022</div>
+          <div id="time" class="mb-5">Effective Date: August 8, 2023</div>
           <div class="content1">
             Rise of Immortals ("us", "we", or "our") operates the website.
             <br></br>

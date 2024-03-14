@@ -30,6 +30,13 @@
   color: #000000;
   text-align: center;
   font: 700 12px 'Barlow';
+  background-color: #ff8a00;
+  background-image: linear-gradient(#fdc500, #ff8a00);
+  border: 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .imgHero{
   position: absolute;

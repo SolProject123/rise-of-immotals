@@ -11,7 +11,7 @@ export default function Term() {
         <div class="container d-block text-left">
 
           <div id="title">Term and Conditions</div>
-          <div id="time" class="mb-5">Effective Date: August 8, 2022</div>
+          <div id="time" class="mb-5">Effective Date: August 8, 2023</div>
           <div class="content">
             Rise of Immortals is a blockchain game application that runs on the Solana blockchain (Layer 2 Immutable X) compatible networks using specially-developed smart contracts (each, a “Smart Contract”) to enable users to own, transfer, buy and sell Rise of Immortals NFTs, which the user can then interact with by using them in the game (the “App”). The Smart Contracts, Rise of Immortals Application, and the Site are collectively referred to in these Terms as the “Service”.
             <br />

@@ -92,7 +92,7 @@ export default function Header() {
     },
     {
       title: "Whitepaper",
-      url: "https://rise-of-immortals.gitbook.io/rise-of-immortals/rise-of-immortals/what-is-rise-of-immortals",
+      url: "",
     },
   ];
   const viewPort = useViewport();
@@ -155,6 +155,7 @@ export default function Header() {
                       "nav-link nav-link-mobile " +
                       (checkIfActivePage(`${v.url}`) ? "active" : "")
                     }
+                    style={{ pointerEvents: v.title === 'Whitepaper' ? 'none' : 'unset' }}
                     href={v.url}
                   >
                     {v.title}
@@ -327,7 +328,7 @@ export default function Header() {
                 style={{ color: "#000000", fontWeight: 500 }}
                 id="wallet_btn"
               >
-                Connect to Wallet
+                BUY ROI
               </button>
             ) : null}
           </div>
