@@ -834,4 +834,13 @@
     width: 570px;
     min-width: 570px;
   }
+  .homepage .mini-text{
+    font-size: 14px !important;
+    padding: 0;
+    line-height: 22px;
+    margin-left: 0px !important;
+  }
+  .homepage .diamon {
+    padding: 0;
+  }
 }
