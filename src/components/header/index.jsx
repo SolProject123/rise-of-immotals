@@ -90,10 +90,10 @@ export default function Header() {
       title: "Token",
       url: "/token",
     },
-    {
-      title: "Whitepaper",
-      url: "",
-    },
+    // {
+    //   title: "Whitepaper",
+    //   url: "",
+    // },
   ];
   const viewPort = useViewport();
   const isMobile = viewPort.width <= 1024;
@@ -312,14 +312,14 @@ export default function Header() {
                     <div className="soon">Soon</div>
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     class="nav-link"
                     href="https://rise-of-immortals.gitbook.io/rise-of-immortals/rise-of-immortals/what-is-rise-of-immortals"
                   >
                     Whitepaper
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             {isMobile == false ? (
