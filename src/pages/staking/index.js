@@ -212,7 +212,7 @@ export default function Staking() {
 army.
                 </div>
                 <div className="row d-flex justify-content-center mt-3">
-                  <button className="btn btn-light">Comming Soon</button>
+                  <button className="btn btn-light">Coming Soon</button>
                 </div>
               </div>
               </div>
@@ -226,7 +226,7 @@ army.
                 Hero NFTs – Heroes are super-troops that support your army in  offensive fights and help protect your village from assaults.
                 </div>
                 <div className="row d-flex justify-content-center mt-3">
-                  <button className="btn btn-light">Comming Soon</button>
+                  <button className="btn btn-light">Coming Soon</button>
                 </div>
               </div>
               </div>
@@ -240,7 +240,7 @@ army.
                 Statue NFTs – Statues enhance the efficiency of your settlement by giving your troops and resources beneficial boosts.
                 </div>
                 <div className="row d-flex justify-content-center mt-3">
-                  <button className="btn btn-light">Comming Soon</button>
+                  <button className="btn btn-light">Coming Soon</button>
                 </div>
               </div>
               </div>
