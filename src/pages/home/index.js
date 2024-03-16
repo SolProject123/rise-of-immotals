@@ -134,21 +134,24 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="row d-flex justify-content-center">
-                  <div
-                    className="col text-left mini-text text-left"
-                    style={{ marginLeft: 15 }}
-                  >
-                    Earn SAPPHIRE by winning battles, successfully defending
-                    your base, completing different challenges, climbing your
-                    way up on the leaderboards, and many more.
-                    <br />
-                    <br />
+                  <div className="d-flex">
+                    <div
+                      className="col text-left mini-text text-left"
+                    // style={{ marginLeft: 15 }}
+                    >
+                      Earn SAPPHIRE by winning battles, successfully defending
+                      your base, completing different challenges, climbing your
+                      way up on the leaderboards, and many more.
+                      
+                    </div>
+                    <div className="col diamon">
+                        <img src="images/Dynamon.png" />
+                      </div>
+                  </div>
+                  <div className="mini-text" style={{ textAlign: 'start' }}>
                     Gold, Elixir, and Dark Elixir are additional in-game
                     resources that your heroes and troops can steal from
                     opponent's villages.
-                  </div>
-                  <div className="col diamon">
-                    <img src="images/Dynamon.png" />
                   </div>
                 </div>
                 <div className="row d-flex justify-content-center">
