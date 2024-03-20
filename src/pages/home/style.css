@@ -808,7 +808,8 @@
     margin-top: 0;
   }
   .homepage #register-content {
-    height: 620px;
+    /* height: 620px; */
+    height: 440px;
   }
   .homepage #register-content img {
     position: absolute;

@@ -53,7 +53,7 @@ export default function Home() {
                       STRATEGY GAME
                     </div>
                     <div id="aaa-hero-base-strategy-game-detail">
-                      Powered by NFTs on the Solana blockchain
+                      Powered by NFTs on the Arbitrum blockchain
                     </div>
 
                     {!isMobile ? (
@@ -142,11 +142,11 @@ export default function Home() {
                       Earn SAPPHIRE by winning battles, successfully defending
                       your base, completing different challenges, climbing your
                       way up on the leaderboards, and many more.
-                      
+
                     </div>
                     <div className="col diamon">
-                        <img src="images/Dynamon.png" />
-                      </div>
+                      <img src="images/Dynamon.png" />
+                    </div>
                   </div>
                   <div className="mini-text" style={{ textAlign: 'start' }}>
                     Gold, Elixir, and Dark Elixir are additional in-game
@@ -165,9 +165,9 @@ export default function Home() {
               </div>
             )}
 
-            {/* <div id="sponsor">Sponsor</div> */}
-            {/* <div id="up-comming">COMING SOON </div> */}
-            <div id="partner">Partner</div>
+            <div id="sponsor">Sponsor</div>
+            <div id="up-comming">COMING SOON </div>
+            {/* <div id="partner">Partner</div>
             <Box
               sx={{
                 display: 'flex',
@@ -201,7 +201,7 @@ export default function Home() {
               <img src="images/partners/image 13.png" alt="img partner" />
               <img src="images/partners/image 14.png" alt="img partner" />
               <img src="images/partners/image 15.png" alt="img partner" />
-            </Box>
+            </Box> */}
             {!isMobile ? (
               <div id="see-the-latest-container">
                 <div></div>
@@ -688,7 +688,7 @@ export default function Home() {
                         <a class="carousel-control-prev" href="#carouselAboutBanner" role="button" data-slide="prev" style={{ position: 'absolute', left: -20 }}><span class="carousel-control-prev-icon" aria-hidden="true" style={{ display: 'flex' }}></span><span class="sr-only">Previous</span></a>
                         {/* <div class="card" style={{ width: 300 }}> */}
                         <div style={{ width: 300 }}>
-                        <Video
+                          <Video
                             id="video-1"
                             src="videos/Zeus_Clip10s.mp4"
                             type="video/mp4"
@@ -808,14 +808,55 @@ export default function Home() {
                   <img src="images/Char_Builder.png" alt="" />
                 </div>
                 <div id="register-right">
+                  <div id="register">Pre register to stay up to date</div>
+                  <div id="sign-up">
+                    Sign up to our newsletter to reveive development
+                    updates, token,
+                    <br />
+                    and NFT drops, and exclusive promotions.
+                  </div>
+                  <div class="mb-3">
+                    <div
+                      id="input-container"
+                      class="input-group  rounded-2"
+                    >
+                      <input
+                        type="email"
+                        class="form-control bg-transparent text-white"
+                        placeholder="Enter your email"
+                        onChange={(e) => {
+                          setMessage(e.target.value);
+                        }}
+                      />
+                      <div class="input-group-append  rounded-2">
+                        <span class="input-group-text" id="basic-addon2" onClick={() => {
+                          fetch(api(message)).then(rs => {
+                            if (rs.status == 200) {
+
+                              toast.success('🦄 Your information has been submitted successfully, we will send you the information as soon as possible!', {
+                                position: toast.POSITION.BOTTOM_RIGHT
+
+
+                              });
+
+                            }
+                          })
+                        }}>
+                          Join us now
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div id="register-content">
+                <div id="register-left">
+                  <img src="images/Char_Builder.png" alt="" />
+                </div>
+                <div id="register-right">
                   <div id="register">Rise of Immortals Tokennomics</div>
                   <div
                     id="calendar-container-tokennomics"
-                    // style={{
-                    //   overflowX: "scrool",
-                    //   overflowY: "hidden",
-                    //   width: '100%'
-                    // }}
                   >
                     <div id="time-line">
                       <div id="first-row">
@@ -879,7 +920,7 @@ export default function Home() {
                     <button onClick={() => window.open("https://solscan.io/token/FkK2Mj7oprVMAoQtzQzhwaUFwGaBTSpJjhGKAoDcoptk", "_blank")}>View Contract</button>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
